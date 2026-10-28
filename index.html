@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Fahad Qureshi — Senior Flutter Developer</title>
+    <meta name="description" content="Portfolio of Muhammad Fahad Qureshi — Senior Flutter Developer with 6+ years of experience building high-performance cross-platform mobile apps.">
+    <meta name="keywords" content="Flutter Developer, Mobile App Developer, Dart, iOS, Android, Cross-Platform, Firebase, AI Integration">
+    <meta name="author" content="Muhammad Fahad Qureshi">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Muhammad Fahad Qureshi — Senior Flutter Developer">
+    <meta property="og:description" content="6+ years engineering high-performance, scalable cross-platform mobile apps for iOS & Android.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>MFQ<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting animate-on-scroll">
+                    <span class="greeting-wave">👋</span> Hello, I'm
+                </p>
+                <h1 class="hero-name animate-on-scroll">
+                    Muhammad Fahad
+                    <span class="hero-name-highlight">Qureshi</span>
+                </h1>
+                <div class="hero-title-wrapper animate-on-scroll">
+                    <span class="hero-title-prefix">Senior</span>
+                    <div class="typewriter-wrapper">
+                        <span class="typewriter" id="typewriter"></span>
+                        <span class="typewriter-cursor">|</span>
+                    </div>
+                </div>
+                <p class="hero-description animate-on-scroll">
+                    6+ years engineering <strong>high-performance, scalable</strong> cross-platform
+                    mobile applications for <strong>iOS & Android</strong>. Expertise in cloud architectures,
+                    robust API integrations, and advanced <strong>AI features</strong>.
+                </p>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Apps Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-suffix">K+</span>
+                        <span class="stat-label">Downloads</span>
+                    </div>
+                </div>
+                <div class="hero-actions animate-on-scroll">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </a>
+                </div>
+                <div class="hero-socials animate-on-scroll">
+                    <a href="https://github.com/mfahadfaizi" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/mfahadfaizi" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:mfahadfaizi@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+923472329591" class="social-link" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="code-window">
+                    <div class="code-window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">main.dart</span>
+                    </div>
+                    <pre class="code-content"><code><span class="code-keyword">class</span> <span class="code-class">FahadQureshi</span> <span class="code-keyword">extends</span> <span class="code-class">FlutterDeveloper</span> {
+  <span class="code-keyword">final</span> experience = <span class="code-string">'6+ years'</span>;
+  <span class="code-keyword">final</span> apps = <span class="code-number">20</span>;
+  <span class="code-keyword">final</span> passion = <span class="code-string">'∞'</span>;
+
+  <span class="code-type">List</span>&lt;<span class="code-type">String</span>&gt; <span class="code-method">get</span> skills =&gt; [
+    <span class="code-string">'Flutter'</span>, <span class="code-string">'Dart'</span>,
+    <span class="code-string">'Firebase'</span>, <span class="code-string">'AI/ML'</span>,
+    <span class="code-string">'Clean Architecture'</span>,
+  ];
+
+  <span class="code-type">Future</span>&lt;<span class="code-type">App</span>&gt; <span class="code-method">buildAmazing</span>() <span class="code-keyword">async</span> {
+    <span class="code-keyword">return</span> App(quality: <span class="code-string">'exceptional'</span>);
+  }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p>
+                        I'm a <strong>Senior Flutter Developer</strong> based in Karachi, Pakistan, with over
+                        <strong>6 years of professional experience</strong> crafting beautiful, performant mobile
+                        applications. My journey spans from building foundational PHP backends to mastering the
+                        Flutter ecosystem.
+                    </p>
+                    <p>
+                        I specialize in engineering <strong>cross-platform mobile applications</strong> that serve
+                        users across the globe — from food delivery services in <strong>Aruba</strong> to fitness
+                        apps in the <strong>UAE</strong>, ride-hailing platforms in <strong>Portugal</strong>, and
+                        AI-powered tools in the <strong>USA</strong>.
+                    </p>
+                    <p>
+                        My expertise extends to <strong>cloud-based architectures</strong> (AWS, Firebase, Supabase),
+                        implementing advanced <strong>AI integrations</strong> (OpenAI GPT, Gemini, Claude), and
+                        leading cross-functional international teams through full development lifecycles.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Global Client Base</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>iOS & Android Expert</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI Integration Specialist</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Leadership</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <div class="info-card">
+                        <div class="info-card-header">
+                            <div class="avatar-placeholder">
+                                <span>MFQ</span>
+                            </div>
+                            <div>
+                                <h3>Muhammad Fahad Qureshi</h3>
+                                <p class="info-card-role">Senior Flutter Developer</p>
+                            </div>
+                        </div>
+                        <div class="info-card-details">
+                            <div class="info-row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Karachi, Pakistan</span>
+                            </div>
+                            <div class="info-row">
+                                <i class="fas fa-envelope"></i>
+                                <span>mfahadfaizi@gmail.com</span>
+                            </div>
+                            <div class="info-row">
+                                <i class="fas fa-phone"></i>
+                                <span>+92 347 2329591</span>
+                            </div>
+                            <div class="info-row">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>ACCP Prime — Computer Science</span>
+                            </div>
+                            <div class="info-row">
+                                <i class="fas fa-certificate"></i>
+                                <span>Flutter & Firebase Certified</span>
+                            </div>
+                        </div>
+                        <div class="info-card-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">iOS</span>
+                            <span class="tag">Android</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">02.</span> Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker current"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Flutter Developer <span class="company-badge remote">Remote</span></h3>
+                                <p class="company">LinkYou — Canada</p>
+                            </div>
+                            <span class="timeline-date">Feb 2026 — Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Working remotely with a Canadian company developing and maintaining Flutter applications</li>
+                            <li>Contributing to <strong>HalalDil</strong> and <strong>HalalDil Partner</strong> applications</li>
+                            <li>Implemented authentication, user management, notifications, and real-time functionality</li>
+                            <li>Collaborating with international teams using Agile methodologies</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Flutter</span><span>Dart</span><span>Agile</span><span>Remote</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker current"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Sr. Flutter Developer <span class="company-badge onsite">On-Site</span></h3>
+                                <p class="company">Weblinx Solution</p>
+                            </div>
+                            <span class="timeline-date">Feb 2023 — Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed and maintained <strong>20+ Flutter applications</strong> with over <strong>100,000+</strong> combined downloads</li>
+                            <li>Integrated Supabase, Firebase, and AWS for real-time data sync, user auth, and scalable backend</li>
+                            <li>Implemented AI-powered features using <strong>OpenAI, Gemini, and Claude Sonnet</strong></li>
+                            <li>Delivered apps with streaming, dynamic linking, push notifications, and App Store / Play Store deployment</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Flutter</span><span>GetX</span><span>Firebase</span><span>AWS</span><span>AI</span><span>Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Flutter App Developer</h3>
+                                <p class="company">IT Media Zone</p>
+                            </div>
+                            <span class="timeline-date">Nov 2021 — Mar 2023</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built and maintained production-grade Flutter apps</li>
+                            <li>Worked with Firebase and REST APIs, managed state using BLoC, Provider, and GetX</li>
+                            <li>Participated in agile team collaboration, client meetings, and Flutter-based product strategy</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Flutter</span><span>BLoC</span><span>Firebase</span><span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>PHP Programmer</h3>
+                                <p class="company">Deevloopers — Karachi, Pakistan</p>
+                            </div>
+                            <span class="timeline-date">Feb 2021 — Dec 2021</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Created backend logic using PHP and MySQL</li>
+                            <li>Worked closely with frontend teams to deliver custom software solutions</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>PHP</span><span>MySQL</span><span>Backend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">03.</span> Featured Projects
+            </h2>
+            <p class="section-subtitle animate-on-scroll">
+                A selection of apps I've built, serving users across continents
+            </p>
+
+            <div class="projects-grid">
+                <!-- VapVap Eats -->
+                <div class="project-card featured animate-on-scroll">
+                    <div class="project-card-header">
+                        <div class="project-icon food">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.vapvapeats.customer" target="_blank" rel="noopener" class="project-link" title="Play Store">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="https://apps.apple.com/app/vapvap-eats/id6670157498" target="_blank" rel="noopener" class="project-link" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">VapVap Eats</h3>
+                    <p class="project-region"><i class="fas fa-map-marker-alt"></i> Aruba</p>
+                    <p class="project-description">
+                        Multi-restaurant food delivery service operating across Aruba. Real-time order tracking,
+                        multi-language support (Papiamento, Spanish, Dutch, English), and admin panel for fleet management.
+                    </p>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>Real-time</span><span>Maps</span><span>Localization</span><span>Admin Panel</span>
+                    </div>
+                </div>
+
+                <!-- Gymbudd -->
+                <div class="project-card featured animate-on-scroll">
+                    <div class="project-card-header">
+                        <div class="project-icon fitness">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.gymbuddapp.gymbudd" target="_blank" rel="noopener" class="project-link" title="Play Store">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="https://apps.apple.com/app/gymbudd/id6503943498" target="_blank" rel="noopener" class="project-link" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Gymbudd</h3>
+                    <p class="project-region"><i class="fas fa-map-marker-alt"></i> UAE</p>
+                    <p class="project-description">
+                        Social fitness app connecting gym enthusiasts. Location-based partner matching, in-app messaging,
+                        trainer booking, and RevenueCat subscription management.
+                    </p>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>Geolocation</span><span>RevenueCat</span><span>Messaging</span>
+                    </div>
+                </div>
+
+                <!-- Gigfinder -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <div class="project-icon music">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Gigfinder</h3>
+                    <p class="project-region"><i class="fas fa-map-marker-alt"></i> USA</p>
+                    <p class="project-description">
+                        Discovery and planning app for musicians. Multi-city tour planning, social sharing,
+                        ticketing, and QR code check-in modules.
+                    </p>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>Maps</span><span>QR Code</span><span>Social</span>
+                    </div>
+                </div>
+
+                <!-- TaxiGo -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <div class="project-icon taxi">
+                            <i class="fas fa-taxi"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.taxigo.rider" target="_blank" rel="noopener" class="project-link" title="Play Store">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">TaxiGo</h3>
+                    <p class="project-region"><i class="fas fa-map-marker-alt"></i> Portugal</p>
+                    <p class="project-description">
+                        Dual-app ride-hailing solution. Real-time driver tracking, fare estimation,
+                        trip history, and Portuguese/English localization.
+                    </p>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>Real-time</span><span>Maps</span><span>Localization</span>
+                    </div>
+                </div>
+
+                <!-- John AI -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <div class="project-icon ai">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.johnai.app" target="_blank" rel="noopener" class="project-link" title="Play Store">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="https://apps.apple.com/app/john-ai/id6504583158" target="_blank" rel="noopener" class="project-link" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">John AI</h3>
+                    <p class="project-region"><i class="fas fa-map-marker-alt"></i> USA</p>
+                    <p class="project-description">
+                        AI-powered application with OpenAI and Gemini APIs. Conversational interfaces
+                        and smart workflow automation.
+                    </p>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>OpenAI</span><span>Gemini</span><span>AI</span>
+                    </div>
+                </div>
+
+                <!-- Mahari -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <div class="project-icon sports">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.mahari.app" target="_blank" rel="noopener" class="project-link" title="Play Store">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="https://apps.apple.com/app/mahari/id6504583159" target="_blank" rel="noopener" class="project-link" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Mahari</h3>
+                    <p class="project-region"><i class="fas fa-map-marker-alt"></i> UAE</p>
+                    <p class="project-description">
+                        Football training and skill development app. Structured learning paths, performance tracking,
+                        coaching features, and achievement rewards system.
+                    </p>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>Training</span><span>Gamification</span><span>Progress</span>
+                    </div>
+                </div>
+
+                <!-- SyncMeet -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <div class="project-icon meeting">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Play Store">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="#" class="project-link" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SyncMeet</h3>
+                    <p class="project-region"><i class="fas fa-globe"></i> Global</p>
+                    <p class="project-description">
+                        Meeting & scheduling platform with collaboration features,
+                        integrated notifications, and user management.
+                    </p>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>Scheduling</span><span>Notifications</span>
+                    </div>
+                </div>
+
+                <!-- Car Profito -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <div class="project-icon car">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Play Store">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="#" class="project-link" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Car Profito</h3>
+                    <p class="project-region"><i class="fas fa-map-marker-alt"></i> Europe</p>
+                    <p class="project-description">
+                        Automotive marketplace platform with vehicle listing management,
+                        real-time updates, and cloud backend integration.
+                    </p>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>Marketplace</span><span>Cloud</span>
+                    </div>
+                </div>
+
+                <!-- Mecca Center -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-header">
+                        <div class="project-icon community">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Play Store">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="#" class="project-link" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Mecca Center</h3>
+                    <p class="project-region"><i class="fas fa-map-marker-alt"></i> USA</p>
+                    <p class="project-description">
+                        Community and event management application with event scheduling,
+                        notifications, and community engagement features.
+                    </p>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>Community</span><span>Events</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">04.</span> Skills & Technologies
+            </h2>
+
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-flutter"></i> Flutter</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Dart</div>
+                        <div class="skill-item"><i class="fab fa-android"></i> Android</div>
+                        <div class="skill-item"><i class="fab fa-apple"></i> iOS</div>
+                        <div class="skill-item"><i class="fas fa-clock"></i> WatchOS</div>
+                        <div class="skill-item"><i class="fas fa-vr-cardboard"></i> VisionOS</div>
+                    </div>
+                </div>
+
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>State Management</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span> GetX</div>
+                        <div class="skill-item"><span class="skill-dot"></span> BLoC</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Provider</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Riverpod</div>
+                    </div>
+                </div>
+
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Backend & Cloud</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-fire"></i> Firebase</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Firestore</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Firebase Functions</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Supabase</div>
+                        <div class="skill-item"><i class="fab fa-aws"></i> AWS</div>
+                        <div class="skill-item"><span class="skill-dot"></span> REST APIs</div>
+                        <div class="skill-item"><span class="skill-dot"></span> GraphQL</div>
+                    </div>
+                </div>
+
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Integrations</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span> OpenAI GPT</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Google Gemini</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Claude Sonnet</div>
+                    </div>
+                </div>
+
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Payments & Maps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span> RevenueCat</div>
+                        <div class="skill-item"><span class="skill-dot"></span> In-App Purchases</div>
+                        <div class="skill-item"><i class="fab fa-stripe-s"></i> Stripe</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Google Maps</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Geolocation</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Push Notifications</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Deep Linking</div>
+                    </div>
+                </div>
+
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3>Architecture & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span> Clean Architecture</div>
+                        <div class="skill-item"><span class="skill-dot"></span> MVVM</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Repository Pattern</div>
+                        <div class="skill-item"><span class="skill-dot"></span> SOLID Principles</div>
+                        <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill-item"><i class="fab fa-github"></i> GitHub</div>
+                        <div class="skill-item"><i class="fab fa-gitlab"></i> GitLab</div>
+                        <div class="skill-item"><span class="skill-dot"></span> Postman</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">
+                <span class="section-number">05.</span> Get In Touch
+            </h2>
+            <div class="contact-content animate-on-scroll">
+                <p class="contact-text">
+                    I'm always open to discussing new projects, creative ideas, or opportunities
+                    to be part of your vision. Whether you need a stunning mobile app or want to
+                    integrate AI into your product — let's talk!
+                </p>
+                <div class="contact-cards">
+                    <a href="mailto:mfahadfaizi@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>mfahadfaizi@gmail.com</p>
+                    </a>
+                    <a href="tel:+923472329591" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+92 347 2329591</p>
+                    </a>
+                    <a href="https://linkedin.com/in/mfahadfaizi" target="_blank" rel="noopener" class="contact-card">
+                        <i class="fab fa-linkedin-in"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </a>
+                    <a href="https://github.com/mfahadfaizi" target="_blank" rel="noopener" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>View my code</p>
+                    </a>
+                </div>
+                <a href="mailto:mfahadfaizi@gmail.com" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i> Say Hello
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>MFQ<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <p>Designed & Built by Muhammad Fahad Qureshi</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/mfahadfaizi" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/mfahadfaizi" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:mfahadfaizi@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
