@@ -411,6 +411,28 @@ img { max-width: 100%; display: block; }
     gap: 8px;
 }
 
+.hero-handle-tag {
+    font-family: var(--font-mono);
+    color: var(--accent-primary);
+    background: var(--tag-bg);
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.handle-badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    border-radius: 12px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
 .greeting-wave {
     display: inline-block;
     animation: wave 2.5s infinite;
